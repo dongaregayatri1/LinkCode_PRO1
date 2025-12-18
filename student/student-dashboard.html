@@ -8,22 +8,61 @@
 <body>
 
     <h2>Student Dashboard</h2>
-    <h3>Daily Tasks</h3>
+    <h3>Daily Task Management</h3>
 
+    <!-- Add Task Form -->
     <form>
-        <label>Add New Task:</label><br>
-        <input type="text" placeholder="Enter task">
+        <label>Task Name:</label><br>
+        <input type="text" placeholder="Enter task name"><br><br>
+
+        <label>Task Description:</label><br>
+        <textarea placeholder="Enter task description"></textarea><br><br>
+
+        <label>Task Status:</label><br>
+        <select>
+            <option>Not Done</option>
+            <option>In Progress</option>
+            <option>Completed</option>
+        </select><br><br>
+
         <button type="button">Add Task</button>
     </form>
 
+    <hr>
+
+    <!-- Task List -->
     <h3>Task List</h3>
 
-    <ul>
-        <li>Complete Assignment</li>
-        <li>Study HTML</li>
-    </ul>
+    <table border="1">
+        <tr>
+            <th>Task Name</th>
+            <th>Description</th>
+            <th>Status</th>
+        </tr>
 
-    <p>Task Progress:</p>
+        <!-- Sample Static Tasks -->
+        <tr>
+            <td>Study HTML</td>
+            <td>Learn basic tags</td>
+            <td>Not Done</td>
+        </tr>
+
+        <tr>
+            <td>Assignment</td>
+            <td>Submit college work</td>
+            <td>In Progress</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Progress Section -->
+    <h3>Progress</h3>
+
+    <p>Not Done: 1</p>
+    <p>In Progress: 1</p>
+    <p>Completed: 0</p>
+
     <progress value="1" max="2"></progress>
 
 </body>
